@@ -38,7 +38,7 @@ public class PracticalTest01Var02SecondaryActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent != null && intent.getExtras().containsKey("opResult")) {
             String op = intent.getStringExtra("opResult");
-            opResult.setText(String.valueOf(op));
+            opResult.setText(String.format("%s", op));
         }
 
         correctButton = (Button)findViewById(R.id.correct);

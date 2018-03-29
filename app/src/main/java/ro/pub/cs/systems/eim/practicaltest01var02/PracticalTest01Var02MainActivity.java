@@ -32,7 +32,7 @@ public class PracticalTest01Var02MainActivity extends AppCompatActivity {
             switch(view.getId()) {
                 case R.id.navigate_to_secondary_activity_button:
                     Intent intent = new Intent(getApplicationContext(), PracticalTest01Var02SecondaryActivity.class);
-                    String opR = opResult.toString();
+                    String opR = opResult.getText().toString();
                     intent.putExtra("opResult", opR);
                     startActivityForResult(intent, SECONDARY_ACTIVITY_REQUEST_CODE);
                     break;
