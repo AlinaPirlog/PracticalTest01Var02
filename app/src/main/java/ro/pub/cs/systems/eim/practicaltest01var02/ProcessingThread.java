@@ -43,7 +43,7 @@ public class ProcessingThread extends Thread {
 
     private void sleep() {
         try {
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         } catch (InterruptedException interruptedException) {
             interruptedException.printStackTrace();
         }
